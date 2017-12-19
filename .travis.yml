@@ -28,6 +28,7 @@ before_deploy:
 deploy:
   provider: releases
   api_key:
+    secure: xNXb0xsFgnkqBgWJgSzHnce4315Xk4ZI18UPZapHxVjGWhCBbjhh4CBNQc3n0t+iAb30OCHr8v2mFssHHXS2eN6Xewp91jrT1PWAhGcengzdW81VbEKx5cRoWpIRAplX4puKwYv1JCxX7MAOsjHA82X/oov7N1X43Yi9e9fIhpJ5xzeL81XWjWUUfVSAWznzoNxuOuw6a84wEm/5FYmyEpzphavzYZH6L4z21by4gwNXPoPeo1Qc7jTVGV9sih4Dwx+od4/RsWJa+0h//pjPaEh7kWok2jluIyam9SQZ+c3AskZ1bYC+18aICqqA+JlalScH/lCfo3o2MSawsIAmtkxVhH3nC8gW/afd6NR1FV6LrLFKZzYVA+G5Jxl2Y3ExcKfptrsOh/duzWE588ZX4K73V8D0yddSN/gCnCPabbiM/GXARgDWQ6A8rjK4qQ/DkmsqOeMkNoYPHSnJhCsC5+/Mvk2p2i8a/b6oo6UEG694DS8mYDewgnoDNVDnDbavpVhs/h524kapM8L0SuYw3i3bxItu3LGi5FUqgU6Yol4ZyUhUlhchfxLfLTx5o0sGwQmJ2pvGlCd2WxER/q9CQeofJLNQALkTPOWFFr6STLIgIDbgr8PWWKYGOL2oEXLSyFnq7AJJntCW6SdVkNJ1VunGmBizdqZKY/lFWA1wxg8=
   file:
     - "${RELEASE_PKG_FILE}"
     - "${RELEASE_DEB_FILE}"
