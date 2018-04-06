@@ -160,7 +160,7 @@ public class ScheduledConditionalCountAlertCondition extends AbstractAlertCondit
 			final Calendar cal = Calendar.getInstance();
 			final CronExpression crontab = new CronExpression(crontabExpression);
 			
-			if (nextFireTime != 0 && new Date(nextFireTime).before(cal.getTime())) {
+			if (nextFireTime != 0 && new Date(nextFireTime).after(cal.getTime())) {
 				return new NegativeCheckResult();
 			}
 			nextFireTime = crontab.getNextValidTimeAfter(cal.getTime()).getTime();
